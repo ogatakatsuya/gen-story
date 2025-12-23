@@ -24,7 +24,7 @@ MESSAGE_PROMPT = """
 - 動画から学べる教訓やインサイト
 - 動画の本質的なメッセージ
 
-3つ程度、それぞれタイトル（短く簡潔に）と詳細なメッセージ（1-2文程度）のペアで、日本語で答えてください。
+3-5つ程度、それぞれタイトル（短く簡潔に）と詳細なメッセージ（1-2文程度）のペアで、日本語で答えてください。
 """
 
 # レートリミット対策: リクエスト間の待機時間（秒）
@@ -130,7 +130,7 @@ async def generate_messages_sequentially(
 def main():
     # Setup paths
     csv_path = Path(
-        "/home/ogata-katsuya/Study/VideoSum/Code/gen_story/data/longvideo-travel-2.csv"
+        "/home/ogata-katsuya/Study/VideoSum/Code/gen_story/data/longvideo-movie.csv"
     )
     # Use CSV filename (without extension) for JSON output
     csv_filename = csv_path.stem
