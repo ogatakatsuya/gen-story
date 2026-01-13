@@ -130,7 +130,7 @@ async def generate_messages_sequentially(
 def main():
     # Setup paths
     csv_path = Path(
-        "/home/ogata-katsuya/Study/VideoSum/Code/gen_story/data/longvideo-movie.csv"
+        "/home/ogata-katsuya/Study/VideoSum/Code/gen_story/data/lv-travel-short.csv"
     )
     # Use CSV filename (without extension) for JSON output
     csv_filename = csv_path.stem
